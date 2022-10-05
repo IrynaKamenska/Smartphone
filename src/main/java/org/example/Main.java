@@ -9,10 +9,10 @@ public class Main {
         Contact contact1 = new Friend("Alice", "123456");
         Contact contact2 = new Friend("Bob", "654321");
 
-        System.out.println("Kontakt: " + contact1.toString());
+        System.out.println("Kontakt: " + contact1);
 
         ArrayList<Contact> list = new ArrayList<>(List.of(contact1, contact2));
-        System.out.println("Kontakten Liste: " + list.toString());
+        System.out.println("Kontakten Liste: " + list);
 
 
         Smartphone smartphone = new Smartphone();
