@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Kontakten Liste: " + contactList);
 
         Smartphone smartphone = new Smartphone("galaxy", "samsung", contactList);
-     //   smartphone.setAllContacts(list);
+//   smartphone.setAllContacts(list);
         System.out.println("Alle Kontakte:" + smartphone.getAllContacts().toString());
 
         smartphone.startRadio();
