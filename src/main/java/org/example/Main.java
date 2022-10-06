@@ -15,13 +15,13 @@ public class Main {
         System.out.println("Kontakten Liste: " + list);
 
 
-        Smartphone smartphone = new Smartphone();
-        smartphone.setAllContacts(list);
+        Smartphone smartphone = new Smartphone("galaxy", "samsung", list);
+     //   smartphone.setAllContacts(list);
         System.out.println("Alle Kontakte:" + smartphone.getAllContacts().toString());
 
-        System.out.println(smartphone.startRadio());
+        smartphone.startRadio();
         System.out.println(smartphone.getPosition());
-        System.out.println(smartphone.stopRadio());
+        smartphone.stopRadio();
 
 
         Contact buisnessContact = new BuisnessContact("John", "neuefische");

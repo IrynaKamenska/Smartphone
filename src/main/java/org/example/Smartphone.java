@@ -12,8 +12,12 @@ public class Smartphone implements Radio, GPS {
     public Smartphone() {
     }
 
-
-    // Methoden - Getter und Setter
+    public Smartphone(String model, String manufacter, ArrayList<Contact> allContacts) {
+        this.model = model;
+        this.manufacter = manufacter;
+        this.allContacts = allContacts;
+    }
+// Methoden - Getter und Setter
 
 
     public String getModel() {
@@ -91,13 +95,16 @@ public class Smartphone implements Radio, GPS {
     }
 
     @Override
-    public String startRadio() {
-        return "Radio started";
+    public boolean startRadio() {
+        System.out.println( "Radio started");
+        return true;
+
     }
 
     @Override
-    public String stopRadio() {
-        return "Radio stopped";
+    public boolean stopRadio() {
+        System.out.println("Radio stopped");
+        return false;
     }
 
 
