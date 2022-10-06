@@ -30,6 +30,7 @@ public class Main {
         boolean removed = smartphone.removeContactByName("Alice");
         System.out.println("Entfernt:" + removed);
         System.out.println("Alle Kontakte:" + smartphone.getAllContacts().toString());
+        System.out.println("Test");
 
 
     }
